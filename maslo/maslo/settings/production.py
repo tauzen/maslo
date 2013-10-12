@@ -23,7 +23,7 @@ def get_env_setting(setting):
 # See: https://docs.djangoproject.com/en/1.5/releases/1.5/#allowed-hosts-required-in-production
 ENV_CONFIGURED_DOMAINS = get_env_setting('MASLO_DOMAINS')
 
-ALLOWED_HOSTS = [CONFIGURED_DOMAINS]
+ALLOWED_HOSTS = [ENV_CONFIGURED_DOMAINS]
 ########## END HOST CONFIGURATION
 
 ########## EMAIL CONFIGURATION
