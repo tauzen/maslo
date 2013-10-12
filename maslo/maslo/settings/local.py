@@ -1,8 +1,5 @@
 """Development settings and globals."""
 
-
-from os.path import join, normpath
-
 from base import *
 
 
@@ -26,8 +23,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'masloportfolio',
-        'USER': 'masloportfolio',
+        'NAME': 'maslo',
+        'USER': '',
         'PASSWORD': '',
         'HOST': '',
         'PORT': '',

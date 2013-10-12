@@ -18,9 +18,12 @@ def get_env_setting(setting):
         error_msg = "Set the %s env variable" % setting
         raise ImproperlyConfigured(error_msg)
 
+
 ########## HOST CONFIGURATION
 # See: https://docs.djangoproject.com/en/1.5/releases/1.5/#allowed-hosts-required-in-production
-ALLOWED_HOSTS = []
+ENV_CONFIGURED_DOMAINS = get_env_setting('MASLO_DOMAINS')
+
+ALLOWED_HOSTS = [CONFIGURED_DOMAINS]
 ########## END HOST CONFIGURATION
 
 ########## EMAIL CONFIGURATION
@@ -50,12 +53,14 @@ SERVER_EMAIL = EMAIL_HOST_USER
 ########## END EMAIL CONFIGURATION
 
 ########## DATABASE CONFIGURATION
+ENV_DATABASE_PASSWORD = get_env_setting('MASLO_DB_PASS')
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'masloportfolio',
-        'USER': 'masloportfolio',
-        'PASSWORD': '',
+        'NAME': 'maslo',
+        'USER': 'maslo',
+        'PASSWORD': ENV_DATABASE_PASSWORD,
         'HOST': '',
         'PORT': '',
     }
