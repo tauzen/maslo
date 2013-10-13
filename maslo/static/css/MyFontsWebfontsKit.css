@@ -3,7 +3,7 @@
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
+ * explicitly restricted from using the Licensed ../Webfonts(s).
  * 
  * You may obtain a valid license at the URLs below.
  * 
@@ -32,11 +32,11 @@
 
 
   
-@font-face {font-family: 'Miso';src: url('webfonts/289772_0_0.eot');src: url('webfonts/289772_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/289772_0_0.woff') format('woff'),url('webfonts/289772_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Miso';src: url('../webfonts/289772_0_0.eot');src: url('../webfonts/289772_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/289772_0_0.woff') format('woff'),url('../webfonts/289772_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Miso-Light';src: url('webfonts/289772_1_0.eot');src: url('webfonts/289772_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/289772_1_0.woff') format('woff'),url('webfonts/289772_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Miso-Light';src: url('../webfonts/289772_1_0.eot');src: url('../webfonts/289772_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/289772_1_0.woff') format('woff'),url('../webfonts/289772_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'RistrettoPro-Regular';src: url('webfonts/289772_2_0.eot');src: url('webfonts/289772_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/289772_2_0.woff') format('woff'),url('webfonts/289772_2_0.ttf') format('truetype');}
+@font-face {font-family: 'RistrettoPro-Regular';src: url('../webfonts/289772_2_0.eot');src: url('../webfonts/289772_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/289772_2_0.woff') format('woff'),url('../webfonts/289772_2_0.ttf') format('truetype');}
  
