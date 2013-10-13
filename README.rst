@@ -2,7 +2,6 @@
 maslo project
 =============
 
-Template based on 2scoops.org
+Django portfolio site project.
+Based on 2scoops.org template.
 
-============
-testin
