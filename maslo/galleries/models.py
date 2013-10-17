@@ -2,10 +2,11 @@
 import os
 from django.db import models
 from model_utils.models import TimeStampedModel
+from ordered_model.models import OrderedModel
 from settings.base import MEDIA_ROOT
 
 
-class Gallery(TimeStampedModel):
+class Gallery(TimeStampedModel, OrderedModel):
     title = models.CharField(max_length=60)
     slug = models.SlugField()
     public = models.BooleanField(default=False)
