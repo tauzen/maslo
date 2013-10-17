@@ -26,7 +26,7 @@ DATABASES = {
         'NAME': 'maslo',
         'USER': '',
         'PASSWORD': '',
-        'HOST': '',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
