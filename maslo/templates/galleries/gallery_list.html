@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h2>Galleries</h2>
+	{% for gallery in object_list %}
+	<div class="gallery-cover">
+		<a href="/{{ gallery.slug }}">
+			<img src="/media/{{gallery.get_cover_photo}}" />
+			<h3>{{gallery.title}}</h3>
+		</a>
+	</div>
+	{% endfor %}
+{% endblock content %}

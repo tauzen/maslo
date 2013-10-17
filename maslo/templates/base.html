@@ -39,14 +39,14 @@
   <body>
 
     <div class="container">
-
+    {% block content %}
     <div class="row-fluid">
       <div class="span12 pagination-centered"><img src="{% static 'img/logo.jpg'%}" alt="header" />
         <p class="logo-lead-big">ANIA MASŁOWSKA</p>
         <p class="logo-lead-small">architektura wnętrz</p>
       </div>
     </div>
-
+    {% endblock content %}
     </div> <!-- /container -->
 
     <!-- Le javascript
