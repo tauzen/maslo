@@ -8,7 +8,7 @@ class PhotoInline(admin.StackedInline):
 
 
 class GalleryAdmin(OrderedModelAdmin):
-    list_display = ('move_up_down_links','title', 'date', 'modified', 'public')
+    list_display = ('title', 'move_up_down_links', 'date', 'modified', 'public')
     search_fields = ('title', 'description')
     list_filter = ('public',)
     ordering = ('order',)
