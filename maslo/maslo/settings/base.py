@@ -82,6 +82,7 @@ USE_TZ = True
 MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-url
+# using only one static app, upload content will be displayed on webpage
 MEDIA_URL = '/static/media/'
 ########## END MEDIA CONFIGURATION
 
