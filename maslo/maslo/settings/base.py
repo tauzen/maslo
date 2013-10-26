@@ -196,6 +196,8 @@ DJANGO_APPS = (
 THIRD_PARTY_APPS = (
     # Database migration helpers:
     'south',
+    'crispy_forms',
+    'floppyforms',
 )
 
 # Apps specific for this project go here.
@@ -245,3 +247,10 @@ LOGGING = {
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#wsgi-application
 WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 ########## END WSGI CONFIGURATION
+
+########## DJANGO CRISPY FORMS
+CRISPY_TEMPLATE_PACK = 'bootstrap'
+########## END DJANGO CRISPY FORMS
+
+CONTACT_FROM_EMAIL = 'contactform@example.com'
+EMAIL_RECIPIENTS = 'contactformrecipient@example.com'

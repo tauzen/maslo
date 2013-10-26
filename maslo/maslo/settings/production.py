@@ -82,3 +82,7 @@ CACHES = {
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = get_env_setting('MASLO_SECRET_KEY')
 ########## END SECRET CONFIGURATION
+
+########## CONTACT FORM PRODUCTION CONFIG
+CONTACT_FROM_EMAIL = get_env_setting('MASLO_CONTACT_FORM_EMAIL')
+EMAIL_RECIPIENTS = get_env_setting('MASLO_EMAIL_RECIPIENTS')

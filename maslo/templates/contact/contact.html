@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Send an email{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="span6">
+            <h1>Send an email</h1>
+            {% crispy form form.helper %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block extrajs %}
+$(function() {
+    $('#id_name').focus()
+});
+</script>
+{% endblock %}
