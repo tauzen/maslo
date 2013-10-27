@@ -13,6 +13,8 @@ urlpatterns = patterns('',
     url(r'^gallery/$', GalleryList.as_view()),
     url(r'^gallery/(?P<slug>[A-Za-z0-9_\-]+)/$', GalleryDetail.as_view()),
     url(r'^contact/$', ContactFormView.as_view()),
+    url(r'^sent/$',TemplateView.as_view(template_name='contact/sent.html')),
+    url(r'^about/$', TemplateView.as_view(template_name='about/about.html')),
     url(r'^admin/', include(admin.site.urls)),
 )
 

@@ -1,4 +1,3 @@
-#-*- coding: utf-8 -*-
 from django.conf import settings
 from django.core.mail import send_mail
 from django.views.generic import FormView
@@ -13,12 +12,11 @@ class ContactFormView(FormView):
     success_url = "/sent/"
 
     def form_valid(self, form):
-        name = form.cleaned_data.get('name')
         email = form.cleaned_data.get('email')
         message = form.cleaned_data.get('message')
 
-        mail_subject = "Msg from {0}".format(name)
-        mail_message = "{0} / {1}: \n\n{2}".format(name, email, message)
+        mail_subject = "Msg from {0}".format(email)
+        mail_message = "{0}: \n\n{1}".format(email, message.encode('utf-8'))
         send_mail(
             subject=mail_subject,
             message=mail_message,
