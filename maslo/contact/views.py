@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 from django.conf import settings
 from django.core.mail import send_mail
 from django.views.generic import FormView
@@ -22,7 +23,7 @@ class ContactFormView(FormView):
             subject=mail_subject,
             message=mail_message,
             from_email=settings.CONTACT_FROM_EMAIL,
-            recipient_list=[settings.EMAIL_RECIPIENTS]
+            recipient_list=settings.EMAIL_RECIPIENTS.split(',')
         )
 
         return super(ContactFormView, self).form_valid(form)
