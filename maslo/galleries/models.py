@@ -2,11 +2,11 @@
 import os
 from django.db import models
 from model_utils.models import TimeStampedModel
-from ordered_model.models import OrderedModel
+from adminsortable.models import Sortable
 from settings.base import MEDIA_ROOT
 
 
-class Gallery(TimeStampedModel, OrderedModel):
+class Gallery(TimeStampedModel, Sortable):
     title = models.CharField(max_length=60)
     slug = models.SlugField()
     public = models.BooleanField(default=False)
@@ -20,15 +20,14 @@ class Gallery(TimeStampedModel, OrderedModel):
         photo = Photo.objects.filter(gallery=self).get(is_cover_photo=True)
         return photo.image.name
 
-    class Meta:
+    class Meta(Sortable.Meta):
         verbose_name_plural = "galleries"
 
 
-class Photo(TimeStampedModel):
+class Photo(TimeStampedModel, Sortable):
     image = models.ImageField(upload_to='photos/%Y/%m')
     gallery = models.ForeignKey(Gallery)
     is_cover_photo = models.BooleanField()
-
 
     def __unicode__(self):
         return self.image.name
@@ -48,3 +47,5 @@ class Photo(TimeStampedModel):
             pass
         super(Photo, self).delete()
 
+    class Meta(Sortable.Meta):
+        pass

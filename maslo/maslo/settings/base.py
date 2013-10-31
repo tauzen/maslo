@@ -198,6 +198,7 @@ THIRD_PARTY_APPS = (
     'south',
     'crispy_forms',
     'floppyforms',
+    'adminsortable',
 )
 
 # Apps specific for this project go here.
@@ -249,7 +250,7 @@ WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 ########## END WSGI CONFIGURATION
 
 ########## DJANGO CRISPY FORMS
-CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 ########## END DJANGO CRISPY FORMS
 
 CONTACT_FROM_EMAIL = 'contactform@example.com'

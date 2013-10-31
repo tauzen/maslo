@@ -1,14 +1,14 @@
 from django.contrib import admin
-from ordered_model.admin import OrderedModelAdmin
+from adminsortable.admin import SortableAdmin, SortableStackedInline
 from .models import Gallery, Photo
 
-class PhotoInline(admin.StackedInline):
+class PhotoInline(SortableStackedInline):
     model = Photo
     extra = 5
 
 
-class GalleryAdmin(OrderedModelAdmin):
-    list_display = ('title', 'move_up_down_links', 'date', 'modified', 'public')
+class GalleryAdmin(SortableAdmin):
+    list_display = ('title', 'order', 'date', 'modified', 'public')
     search_fields = ('title', 'description')
     list_filter = ('public',)
     ordering = ('order',)

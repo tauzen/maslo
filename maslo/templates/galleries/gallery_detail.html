@@ -4,6 +4,8 @@
 <h2>{{gallery.title}}</h2>
 <p class="lead">{{gallery.description}}</p>
 {% for photo in photo_list %}
-<img src="{{MEDIA_URL}}{{photo.image.name}}" />
+<div>
+	<img src="{{MEDIA_URL}}{{photo.image.name}}" />
+</div>
 {% endfor %}
 {% endblock content %}
