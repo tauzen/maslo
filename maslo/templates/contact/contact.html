@@ -5,8 +5,7 @@
 
 {% block content %}
     <div class="row">
-        <div class="span12">
-            <h1>Send an email</h1>
+        <div class="form-container">
             {% crispy form form.helper %}
         </div>
     </div>
@@ -18,3 +17,8 @@ $(function() {
 });
 </script>
 {% endblock %}
+{% block extra_css %}
+<style>
+	.form-container { padding-left:15px; padding-right: 60px; padding-bottom: 15px;}
+</style>
+{% endblock extra_css %}

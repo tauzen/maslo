@@ -13,18 +13,19 @@
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <style>
       body {background-color: #eeeeee}
-      .container {background-color: white; }
-      .pagination-centered { text-align: center; }
-      .logo-lead-big { font-size: 37pt; }
-      .logo-lead-small { font-size: 27pt; margin-top: -37px;}
-      img { width: 847px; padding-bottom: 30px;}
+      .container {background-color: white; border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; min-height: 350px;}
+      .logo p { text-align: left; }
+      .logo-lead-big { font-size: 30px;padding-left: 45px;}
+      .logo-lead-small { font-size: 23px;margin-top: -25px;padding-left: 44px;}
+      img { width: 807px; padding-bottom: 20px;}
       .sidebar { position: fixed; }
       .logo { width: 261px; margin-top: 40px; text-align: center; font-family: RistrettoPro-Regular}
       .logo a { color: black;}
       .logo a:hover { text-decoration: none;}
-      .logo img { width: 261px; padding: 0px;}
-      .menu { font-family: Miso-Light;}
-      .menu a { color: black;}
+      .logo img { width: 220px;padding-left: 15px;padding-bottom: 0px}
+      .menu { font-family: Miso-Light; padding-left: 20px; padding-top: 40px;}
+      .nav  > li > a { color: black; padding-left: 24px;}
+      .content { margin-top: 20px; font-family: RistrettoPro-Regular; }
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -55,16 +56,16 @@
             </div>
             <nav class="menu" role="navigation">
               <ul class="nav nav-stacked">
-                <li><a href="/gallery">Projekty</a></li>
-                <li><a href="/contact">Kontakt</a></li>
-                <li><a href="/about">O mnie</a></li>
+                <li><a href="/gallery">PROJEKTY</a></li>
+                <li><a href="/contact">KONTAKT</a></li>
+                <li><a href="/about">O MNIE</a></li>
               </ul>
             </nav>
             <div class="languages"></div>
 
           </div>
         </div>   
-        <div class="col-sm-12 col-lg-9">
+        <div class="content col-sm-12 col-lg-9">
         {% block content %}
           col-9
         {% endblock content %}

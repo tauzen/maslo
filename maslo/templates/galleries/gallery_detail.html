@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>{{gallery.title}}</h2>
-<p class="lead">{{gallery.description}}</p>
+<div class="description">
+	<h2>{{gallery.title}}</h2>
+	<p class="lead">{{gallery.description}}</p>
+</div>
 {% for photo in photo_list %}
-<div>
+<div class="img-detail">
 	<img src="{{MEDIA_URL}}{{photo.image.name}}" />
 </div>
 {% endfor %}
 {% endblock content %}
+{% block extra_css %}
+<style>
+	.img-detail img {padding-bottom: 10px;}
+	.description h2, .description p { font-family: RistrettoPro-Regular;;}
+</style>
+{% endblock extra_css%}

@@ -42,7 +42,7 @@ class Photo(TimeStampedModel, Sortable):
 
     def delete(self):
         try:
-            os.remove(MEDIA_ROOT + self.image.name)
+            os.remove(MEDIA_ROOT + "/" +self.image.name)
         except IOError:
             pass
         super(Photo, self).delete()

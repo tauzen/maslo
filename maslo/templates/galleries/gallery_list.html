@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-	<h2>Galleries</h2>
 	{% for gallery in object_list %}
 	<div class="gallery-cover">
 		<a href="/gallery/{{ gallery.slug }}">
@@ -11,3 +10,9 @@
 	</div>
 	{% endfor %}
 {% endblock content %}
+{% block extra_css %}
+<style>
+	.gallery-cover h3 {position: relative; top: 50px; font-family: RistrettoPro-Regular; color: white; margin-top: -50px; left: 20px;}
+	.gallery-cover a {text-decoration: none;}
+</style>
+{% endblock extra_css %}
