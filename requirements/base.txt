@@ -6,6 +6,6 @@ logutils==0.3.3
 psycopg2==2.5.1
 South==0.8.1
 PIL==1.1.7
-django-ordered-model==0.2.0
+django-admin-sortable==1.5.5
 django-crispy-forms==1.4.0
 django-floppyforms==1.1
