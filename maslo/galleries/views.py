@@ -5,6 +5,9 @@ from .models import Gallery, Photo
 class GalleryList(ListView):
     model = Gallery
 
+    def get_queryset(self):
+        queryset = super(GalleryList, self).get_queryset()
+        return queryset.filter(public=True)
 
 class GalleryDetail(DetailView):
     model = Gallery
