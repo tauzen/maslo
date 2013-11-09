@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
-{% block title %}Send an email{% endblock %}
+{% block title %}{% endblock %}
 
 {% block content %}
     <div class="row">
+    	<div class="contact-description">
+    		<p class="name">Ania Masłowska</p>
+    		<p class="phone">t: +48 603 156 253</p>
+    		<p class="mail">e: <a href="mailto:kontatk@aniamaslowska.pl">kontakt@aniamaslowska.pl</a></p>
+    	</div>
         <div class="form-container">
             {% crispy form form.helper %}
         </div>
@@ -12,13 +17,20 @@
 {% endblock %}
 
 {% block extrajs %}
-$(function() {
-    $('#id_name').focus()
-});
+<script>
+	$(function() {
+	    $('#id_name').focus()
+	});
 </script>
 {% endblock %}
 {% block extra_css %}
 <style>
-	.form-container { padding-left:15px; padding-right: 60px; padding-bottom: 15px;}
+	.form-container { padding-left:15px; padding-right: 200px; padding-bottom: 15px;}
+	.contact-description { padding-left: 15px; padding-bottom: 15px; margin-top: 15px;}
+	label { display: none;}
+	.contact-description a, .contact-description a:hover {color: #FF00FF;}
+	.form-control { border-radius: 0px; background-color: #eee}
+	.form-actions { text-align: right; }
+	.form-actions input { text-transform: uppercase; background-color: #eee; border-radius: 0px; color: black; border-color: #ccc; }
 </style>
 {% endblock extra_css %}
