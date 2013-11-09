@@ -86,3 +86,7 @@ SECRET_KEY = get_env_setting('MASLO_SECRET_KEY')
 ########## CONTACT FORM PRODUCTION CONFIG
 CONTACT_FROM_EMAIL = get_env_setting('MASLO_CONTACT_FORM_EMAIL')
 EMAIL_RECIPIENTS = get_env_setting('MASLO_EMAIL_RECIPIENTS')
+
+########### GOOGLE ANALYTICS 
+GA_ID = get_env_setting('MASLO_GA_ID')
+GA_PAGE_NAME = get_env_setting('MASLO_GA_PAGE_NAME')
