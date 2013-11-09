@@ -4,7 +4,7 @@
 	{% for gallery in object_list %}
 	<div class="gallery-cover">
 		<a href="/gallery/{{ gallery.slug }}">
-			<h3>{{gallery.title}}</h3>
+			<p class="gallery-title">{{gallery.title}}</p>
 			<img src="{{MEDIA_URL}}{{gallery.get_cover_photo}}" />
 		</a>
 	</div>
@@ -12,7 +12,12 @@
 {% endblock content %}
 {% block extra_css %}
 <style>
-	.gallery-cover h3 {position: relative; top: 50px; font-family: RistrettoPro-Regular; color: white; margin-top: -50px; left: 20px;}
-	.gallery-cover a {text-decoration: none;}
+	.gallery-title {position: relative; top: 50px; font-family: RistrettoPro-Regular; color: white; margin-top: -50px; left: 20px;  text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.8); font-size: 24px; padding:0px; z-index: 1;}
+	.gallery-cover a {text-decoration: none; }
+	a > img { opacity:0.9; padding-bottom: 10px ;}
+	a > img:hover { opacity: 1;}
 </style>
 {% endblock extra_css %}
+{% block extra_js %}
+	
+{% endblock extra_js%}
