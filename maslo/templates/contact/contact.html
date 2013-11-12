@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
-{% block title %}{% endblock %}
-
 {% block content %}
     <div class="row">
     	<div class="contact-description">
@@ -26,11 +24,12 @@
 {% block extra_css %}
 <style>
 	.form-container { padding-left:15px; padding-right: 200px; padding-bottom: 15px; padding-top: 45px;}
-	.contact-description { padding-left: 15px; padding-bottom: 15px; margin-top: 15px;}
+	.contact-description { padding-left: 15px; padding-bottom: 15px; margin-top: 16px;}
 	label { display: none;}
-	.contact-description a, .contact-description a:hover {color: #FF00FF;}
+	.contact-description a, .contact-description a:hover {color: rgb(165,135,143);}
 	.form-control { border-radius: 0px; background-color: #eee}
 	.form-actions { text-align: right; }
 	.form-actions input { text-transform: uppercase; background-color: #eee; border-radius: 0px; color: black; border-color: #ccc; }
+	.btn-primary:hover { background-color: rgb(165,135,143); }
 </style>
 {% endblock extra_css %}
