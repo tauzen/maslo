@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <title>{% block title %}Ania Masłowska - architektura wnętrz{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="Architektura wnętrzy, portfolio autorstwa Ani Masłowskiej. Przedląd wybranych prac z lat 2012-2013.">
+    <meta name="author" content="Ania Masłowska">
+    {% block fbmeta %}
+    <meta property="og:image" content="http://aniamaslowska.pl/static/media/photos/2013/11/projekt-wnetrz-mieszkanie-bialystok01.jpg" /> 
+    {% endblock fbmeta %}
     <!-- Le styles -->
     <link href="{% static 'css/MyFontsWebfontsKit.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
