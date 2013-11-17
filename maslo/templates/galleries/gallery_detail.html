@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block fbmeta %}
-<meta property="og:image" content="{{gallery.get_cover_photo}}" /> 
+<meta property="og:image" content="{{request.META.HTTP_HOST}}{{MEDIA_URL}}{{gallery.get_cover_photo}}" /> 
 <meta property="og:description" content="{{gallery.description}}" />
 {% endblock fbmeta %}
 
