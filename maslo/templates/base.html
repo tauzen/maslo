@@ -11,6 +11,7 @@
     <meta property="og:image" content="http://aniamaslowska.pl/static/media/photos/2013/11/projekt-wnetrz-mieszkanie-bialystok01.jpg" /> 
     {% endblock fbmeta %}
     <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="{% static 'css/MyFontsWebfontsKit.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <style>
@@ -28,6 +29,9 @@
       .nav  > li > a { color: black; padding-left: 24px;}
       .content { margin-top: 20px; font-family: RistrettoPro-Regular; font-size:23px; }
       .content img { width: 807px;}
+
+      .addthis_toolbox { margin-left: 807px; margin-top: -5px;}
+      .fa { color: #333; font-size: 18px;}
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -61,18 +65,6 @@
                 <li><a href="/gallery">PROJEKTY</a></li>
                 <li><a href="/contact">KONTAKT</a></li>
                 <li><a href="/about">O MNIE</a></li>
-                <li>
-                  <!-- AddThis Button BEGIN -->
-                  <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
-                  <a class="addthis_button_facebook"></a>
-                  <a class="addthis_button_pinterest_share"></a>
-                  <a class="addthis_button_twitter"></a>
-                  <a class="addthis_button_google_plusone_share"></a>
-                  </div>
-                  <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-                  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-528382e1211e1e7d"></script>
-                  <!-- AddThis Button END -->
-                </li>
               </ul>
             </nav>
             <div class="languages"></div>
@@ -80,6 +72,16 @@
           </div>
         </div>   
         <div class="content col-sm-12 col-md-9">
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_floating_style addthis_16x16_style">
+            <a class="addthis_button_facebook"><i class="fa fa-facebook-square"></i></a>
+            <a class="addthis_button_pinterest_share"><i class="fa fa-pinterest-square"></i></a>
+            <a class="addthis_button_twitter"><i class="fa fa-twitter-square"></i></a>
+            <a class="addthis_button_google_plusone_share"><i class="fa fa-google-plus-square"></i></a>
+          </div>
+          <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-528382e1211e1e7d"></script>
+          <!-- AddThis Button END -->
         {% block content %}
           col-9
         {% endblock content %}
