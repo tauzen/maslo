@@ -4,7 +4,7 @@
 	{% for gallery in object_list %}
 	<div class="gallery-cover">
 		<a href="/gallery/{{ gallery.slug }}">
-			<img src="{{MEDIA_URL}}{{gallery.get_cover_photo}}"  alt="{{gallery.description}}"/>
+			<img src="{{MEDIA_URL}}{{gallery.get_cover_photo}}"  alt="{{gallery.title}}"/>
 			<p class="gallery-title">{{gallery.title}}</p>
 		</a>
 	</div>
