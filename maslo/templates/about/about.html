@@ -1,9 +1,25 @@
 {% extends "base.html" %}
-
-{% block title %}About{% endblock %}
-
-{% block page_title %}About page{% endblock page_title %}
+{% load staticfiles %}
+{% block title %}{% endblock %}
 
 {% block content %}
-<p>This is the About page</p>
+<div class="row about">
+<div class="col-md-5 about-text">
+	<p>Jestem absolwentką Wydziału Architektury Wnętrz Uniwersytetu Artystycznego w Poznaniu. <br />Najbliższe mojemu sercu są wnętrza proste i ponadczasowe.</p>
+	<p>Moje projekty cechuje funkcjonalność, czysta forma i szlachetne materiały.
+	Staram się w nich połaczyć  surową prostotę z ciepłem domowego wnętrza, w każdym chcę zawrzeć coś wyjątkowego. Zawsze poszukuję intrygi - rowiązania, które sprawi, że wnętrze będzie jedyne w swoim rodzaju.
+	Stworzenie takiego wnętrza jest wyzwaniem zarówno dla mnie, jak i dla inwestora. Nasza współpraca nie ogranicza się do opracowania koncepcji wnętrza, projekt realizowany jest kompleksowo by finalny efekt był spełnieniem naszych oczekiwań, by przestrzeń była komfortowa i bezpieczna.</p>
+	<p>Częścią procesu tworzenia wnętrza jest projektowanie mebli, detali i prowadzenie nadzoru autorskiego. Współpracuję z wykwalifikowanymi i sprawdzonymi wykonawcami.</p>
+</div>
+<div class="col-md-7 about-photo">
+	<img src="{% static 'img/ania.jpg' %}" alt="Ania Masłowska" />
+</div>
+</div>
 {% endblock content %}
+{% block extra_css %}
+<style>
+	.about {}
+	.about-text { font-size: 19px;  line-height: 25px;}
+	.about-photo img { padding-bottom: 20px}
+</style>
+{% endblock extra_css %}

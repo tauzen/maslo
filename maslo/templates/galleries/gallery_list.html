@@ -2,7 +2,7 @@
 
 {% block content %}
 	{% for gallery in object_list %}
-	<div class="gallery-cover">
+	<div class="gallery gallery-cover">
 		<a href="/gallery/{{ gallery.slug }}">
 			<img src="{{MEDIA_URL}}{{gallery.get_cover_photo}}"  alt="{{gallery.title}}"/>
 			<p class="gallery-title">{{gallery.title}}</p>
@@ -16,8 +16,8 @@
 	.gallery-cover img { position: absolute; left: 0px; top:0px;}
 	.gallery-title {position: absolute; top: 5px; font-family: RistrettoPro-Regular; color: white; left: 10px;  text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.8); font-size: 24px; padding:0px; z-index: 100; }
 	.gallery-cover a {text-decoration: none; }
-	a > img { opacity:0.9; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
-	a > img:hover { opacity: 1; }
+	.gallery-cover a > img { opacity:0.9; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
+	.gallery-cover a > img:hover { opacity: 1; }
 </style>
 {% endblock extra_css %}
 {% block extra_js %}

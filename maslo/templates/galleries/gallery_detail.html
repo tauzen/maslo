@@ -7,7 +7,7 @@
 
 {% block content %}
 {% for photo in photo_list %}
-<div class="img-detail">
+<div class="gallery img-detail">
 	<img src="{{MEDIA_URL}}{{photo.image.name}}" alt="{{gallery.title}}" />
 </div>
 {% endfor %}
