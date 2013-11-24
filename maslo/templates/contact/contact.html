@@ -6,7 +6,7 @@
     	<div class="contact-description">
     		<p class="name">Ania Masłowska</p>
     		<p class="phone">t: +48 603 156 253</p>
-    		<p class="mail">e: <a href="mailto:kontatk@aniamaslowska.pl">kontakt@aniamaslowska.pl</a></p>
+    		<p class="mail">e: <a href="mailto:kontakt@aniamaslowska.pl">kontakt@aniamaslowska.pl</a></p>
     	</div>
         <div class="form-container">
             {% crispy form form.helper %}
@@ -23,13 +23,6 @@
 {% endblock %}
 {% block extra_css %}
 <style>
-	.form-container { padding-left:15px; padding-right: 200px; padding-bottom: 15px; padding-top: 45px;}
-	.contact-description { padding-left: 15px; padding-bottom: 15px; margin-top: 16px;}
-	label { display: none;}
-	.contact-description a, .contact-description a:hover {color: rgb(165,135,143);}
-	.form-control { border-radius: 0px; background-color: #eee}
-	.form-actions { text-align: right; }
-	.form-actions input { text-transform: uppercase; background-color: #eee; border-radius: 0px; color: black; border-color: #ccc; }
-	.btn-primary:hover { background-color: rgb(165,135,143); }
+
 </style>
 {% endblock extra_css %}

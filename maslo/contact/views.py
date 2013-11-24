@@ -9,7 +9,7 @@ class ContactFormView(FormView):
 
     form_class = ContactForm
     template_name = "contact/contact.html"
-    success_url = "/sent/"
+    success_url = "/wyslane/"
 
     def form_valid(self, form):
         email = form.cleaned_data.get('email')

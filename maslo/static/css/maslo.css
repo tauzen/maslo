@@ -1,1 +1,57 @@
-/*! project specific CSS goes here. */
+/*base styles*/
+body {background-color: #eeeeee}
+.container {background-color: white; border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; min-height: 350px;}
+.logo p { text-align: center; }
+.logo-lead-big { font-size: 45px;padding-left: 15px;}
+.logo-lead-small { font-size: 19px;margin-top: -25px;padding-left: 14px; }
+/*.sidebar { position: fixed; }*/
+.logo { width: 261px; margin-top: 10px; text-align: center; font-family: RistrettoPro-Regular; float: left;}
+.logo a { color: black;}
+.logo a:hover { text-decoration: none;}
+.logo img { width: 220px;padding-left: 15px;padding-bottom: 0px}
+.menu { font-family: Miso-Light; padding-left: 16px; padding-top: 2px; float: left;}
+.nav > li > a { color: black; padding-left: 24px;}
+.nav > li > a:hover { background-color: white; }
+.content { margin-top: 20px; font-family: RistrettoPro-Regular; font-size:23px; }
+.gallery img { width: 100%;}
+
+.addthis_toolbox { margin-left: 807px; margin-top: -5px; padding-bottom:0;line-height: 20px;font-size: 12px;}
+.fa { color: #333; font-size: 18px;}
+
+/*gallery list styles*/
+.gallery-cover { position: relative; margin-bottom: 5px;}
+/*.gallery-cover img { position: absolute; left: 0px; top:0px;}*/
+.gallery-title {position: absolute; top: 5px; font-family: RistrettoPro-Regular; color: white; left: 10px;  text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.8); font-size: 24px; padding:0px; z-index: 100; }
+.gallery-cover a {text-decoration: none; }
+.gallery-cover a > img { opacity:0.9; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
+.gallery-cover a > img:hover { opacity: 1; }
+
+/*gallery detail styles*/
+.img-detail img {padding-bottom: 5px;}
+.description h2, .description p { font-family: RistrettoPro-Regular;;}
+
+/*about styles*/
+.about {}
+.about-text { font-size: 19px;  line-height: 25px;}
+.about-photo img { padding-bottom: 20px; max-width: 442px; width: 100%;}
+
+/*contact styles*/
+.form-container { padding-left:15px; padding-right: 15px; padding-bottom: 15px; padding-top: 45px;}
+.form-container > form { max-width: 661px; width: 100%;}
+.contact-description { padding-left: 15px; padding-bottom: 15px; margin-top: 16px;}
+label { display: none;}
+.contact-description a, .contact-description a:hover {color: rgb(165,135,143);}
+.form-control { border-radius: 0px; background-color: #eee}
+.form-actions { text-align: right; }
+.form-actions input { text-transform: uppercase; background-color: #eee; border-radius: 0px; color: black; border-color: #ccc; }
+.btn-primary:hover { background-color: rgb(165,135,143); }
+
+/* media for hi-def*/
+@media screen and (min-width: 1200px) {
+	.sidebar { position: fixed; margin: 0px;}
+    .gallery { width: 807px;}
+    .gallery-cover { width: 807px; height: 359px; }
+    .menu { float: none; padding-top: 40px; }
+    .logo { float: none; margin-top: 40px;}
+    .nav > li > a:hover { background-color: #eee; }
+}
