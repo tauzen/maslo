@@ -11,7 +11,7 @@
 {% block content %}
 	{% for gallery in object_list %}
 	<div class="gallery gallery-cover">
-		<a href="/galerie/{{ gallery.slug }}">
+		<a href="/galerie/{{ gallery.slug }}/">
 			<img src="{{MEDIA_URL}}{{gallery.get_cover_photo}}"  alt="{{gallery.title}}"/>
 			<p class="gallery-title">{{gallery.title}}</p>
 		</a>
