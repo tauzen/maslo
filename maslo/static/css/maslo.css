@@ -55,3 +55,7 @@ label { display: none;}
     .logo { float: none; margin-top: 40px;}
     .nav > li > a:hover { background-color: #eee; }
 }
+
+/* cookiepopup */
+#cookiepopup { display: none; background: #fff; color: #222; font-size: 12px; padding: 10px; font-family: Arial, Helvetica, Sans-serif; text-align: center; position: fixed; z-index: 9999; bottom: 0; -moz-box-shadow: 0 0 5px #ddd; -webkit-box-shadow: 0 0 5px #ddd; box-shadow: 0 0 5px #ddd; }
+#cookiepopupbtn { display: block; color: #0080FF; font-size: 16px; text-decoration: none; font-weight: bold; margin: 5px 0 0 0; }

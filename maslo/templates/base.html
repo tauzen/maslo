@@ -20,9 +20,6 @@
     <![endif]-->
     <link href="{% static 'css/maslo.css' %}" rel="stylesheet">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
-    <style>
-
-    </style>
     {% block extra_css %}{% endblock extra_css %}
   </head>
   <body>
@@ -65,10 +62,14 @@
         </div>
       </div>
     </div> 
-
+    <div id="cookiepopup">
+      <span>Informacji zarejestrowanych w plikach cookies używamy m.in. w celach dostosowania serwisu do indywidualnych potrzeb użytkownika, a także w celach statystycznych i reklamowych. Możesz zmienić ustawienia dotyczące cookies w swojej przeglądarce internetowej. Jeżeli pozostawisz te ustawienia bez zmian pliki cookies zostaną zapisane w pamięci urządzenia. Zmiana ustawień plików cookies może ograniczyć funkcjonalność serwisu. </span>
+      <a href="#" id="cookiepopupbtn">Tak, rozumiem.</a>
+    </div>
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/maslo.js' %}"></script>
+    <script src="{% static 'js/cookiepopup.js' %}"></script>
     {% block extra_js %}{% endblock extra_js %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
