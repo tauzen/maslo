@@ -6,7 +6,7 @@
 {% block meta %}
 <meta name="description" content="Jestem absolwentką Wydziału Architektury Wnętrz Uniwersytetu Artystycznego w Poznaniu. Najbliższe mojemu sercu są wnętrza proste i ponadczasowe." />
 <meta property="og:description" content="Jestem absolwentką Wydziału Architektury Wnętrz Uniwersytetu Artystycznego w Poznaniu. Najbliższe mojemu sercu są wnętrza proste i ponadczasowe." />
-<meta property="og:url" content="http://{{request.META.HTTP_HOST}}" />
+<meta property="og:url" content="http://{{request.META.HTTP_HOST}}{{ request.path }}" />
 <meta property="og:image" content="http://{{request.META.HTTP_HOST}}{% static 'img/ania2.jpg' %}" /> 
 <meta property="og:title" content="Ania Masłowska - architektura wnętrz: O mnie" />
 {% endblock meta %}

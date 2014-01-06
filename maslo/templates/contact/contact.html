@@ -7,7 +7,7 @@
 {% block meta %}
 <meta name="description" content="Zapraszam do skontaktowania się ze mną." />
 <meta property="og:description" content="Zapraszam do skontaktowania się ze mną." />
-<meta property="og:url" content="http://{{request.META.HTTP_HOST}}" />
+<meta property="og:url" content="http://{{request.META.HTTP_HOST}}{{ request.path }}" />
 <meta property="og:image" content="http://{{request.META.HTTP_HOST}}{% static 'img/ania2.jpg' %}" /> 
 <meta property="og:title" content="Ania Masłowska - architektura wnętrz: Kontakt" />
 {% endblock meta %}
