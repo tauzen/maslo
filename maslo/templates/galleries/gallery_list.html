@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block meta %}
+<meta name="description" content="Ania Masłowska to pracownia specjalizująca się w architekturze wnętrz." />
+<meta property="og:description" content="Ania Masłowska to pracownia specjalizująca się w architekturze wnętrz." />
+<meta property="og:url" content="http://{{request.META.HTTP_HOST}}" />
+<meta property="og:image" content="http://{{request.META.HTTP_HOST}}{{MEDIA_URL}}{{object_list.0.get_cover_photo}}" /> 
+<meta property="og:title" content="Ania Masłowska - architektura wnętrz" />
+{% endblock meta %}
+
 {% block content %}
 	{% for gallery in object_list %}
 	<div class="gallery gallery-cover">

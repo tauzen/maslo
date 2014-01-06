@@ -1,16 +1,16 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8">
     <title>Ania Masłowska - architektura wnętrz{% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ania Masłowska to pracownia specjalizująca się w architekturze wnętrz.">
     <meta name="keywords" content="architektura wnętrz, wnętrza, architektura, portfolio, pracownia">
     <meta name="author" content="Ania Masłowska">
-    {% block fbmeta %}
+    {% block meta %}
     <meta property="og:image" content="http://aniamaslowska.pl/static/media/photos/2013/11/projekt-wnetrz-mieszkanie-bialystok01.jpg" /> 
-    {% endblock fbmeta %}
+    <meta name="description" content="Ania Masłowska to pracownia specjalizująca się w architekturze wnętrz.">
+    {% endblock meta %}
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="{% static 'css/MyFontsWebfontsKit.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
